@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --backgroundColor: rgba(0, 0, 0, 1);
+}
+body {
+  background: linear-gradient(-135deg, #ec2f4b, #009fff);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+}
+.todo-app {
+  width: 100%;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px 40px;
+}
+.todo-heading{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 20px;
+}
+.todo-heading h2{
+  font-size: 1.5rem;
+}
+.todo-heading img{
+  max-width: 45px;
+}
+.todo-input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+.todo-input input{
+  background: transparent;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.todo-input button{
+  border: none;
+  outline: none;
+  background-color: #ff5945;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+#todo-tasks li{
+  list-style-type: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before{
+ content: ' ';
+ position: absolute;
+ height: 25px;
+ width: 25px;
+ border-radius: 50%;
+ background-image: url(./asset/unchecked.png);
+ background-size: cover;
+ background-position: center;
+ left: 8px;
+ top: 12px;
+}
+#todo-tasks li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+#todo-tasks li.checked::before{
+   background-image: url(./asset/checked.png);
+}
+#todo-tasks li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+#todo-tasks li span:hover{
+  background:#edeef0;
+}
