@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="random-color-generator-container">
+      <div class="hex-color-container">
+        <p class="hex-color-value">#fffff</p>
+        <button class="hex-btn">Create Hex Color</button>
+        <button class="hex-copy-btn"><i class="fa-solid fa-copy"></i> Copy To ClipBoard</button>
+      </div>
+      <div class="rgb-color-container">
+          <p class="rgb-color-value">rgb(255,255,45)</p>
+            <div>
+              <label for="red">Red</label>
+          <input  class="silder-red"type="range" min="0" max="255" value="0" id="red">
+            </div>
+          
+         <div>
+           <label for="green">Green</label>
+          <input  class="silder-green"type="range" min="0" max="255" value="0" id="green">
+         </div>
+          <div>
+             <label for="blue">Blue</label>
+          <input  class="silder-blue"type="range" min="0" max="255" value="0" id="blue">
+          </div>
+          <button class="rgb-btn"> Create RGB Color </button>
+                  <button class="rgb-copy-btn"><i class="fa-solid fa-copy"></i> Copy To ClipBoard</button>
+
+      </div>
+    </div>
+  </body>
+</html>
