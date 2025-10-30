@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f;
+  font-family: 'Winky Sans', sans-serif;
+  color: white;
+}
+.container {
+  width: 100%;
+  max-width: 390px;
+  min-height: 380px;
+  background-color:rgba(255, 255, 255, 0.1) ;
+  box-shadow: 0px 0px 11px rgb(195 192 192 / 40%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  border-radius: 10px;
+}
+.container h1 {
+  margin-top: 16px;
+}
+.outputValue {
+  font-size: 48px;
+}
+.box-one {
+  display: flex;
+  column-gap: 32px;
+  margin: 16px 0px;
+}
+.btn-sty {
+  color: #ecf0f1;
+  border-radius: 5px;
+  border: solid 1px #f39c12;
+  background: #e67e22;
+  text-align: center;
+  padding: 0px 30px;
+  width: 100px;
+  font-size: 2.1em;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-box-shadow: 0px 6px 0px #d35400;
+  -moz-box-shadow: 0px 6px 0px #d35400;
+  box-shadow: 0px 6px 0px #d35400;
+  cursor: pointer;
+}
+.btn-sty:active {
+  -webkit-box-shadow: 0px 2px 0px #d35400;
+  -moz-box-shadow: 0px 2px 0px #d35400;
+  box-shadow: 0px 2px 0px #d35400;
+  position: relative;
+  top: 4px;
+}
+.box-two {
+  display: flex;
+  column-gap: 16px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+.box-two p {
+  font-size: 19px;
+}
+.input-sty {
+  width: 100%;
+  max-width: 50px;
+  border-radius: 5px;
+  padding: 5px 5px;
+  border: none;
+  outline: none;
+}
+.resetButton {
+  color: #ecf0f1;
+  border-radius: 5px;
+  border: solid 1px #ff0000;
+  background: #e62222;
+  text-align: center;
+  padding: 5px 15px;
+  font-size: 1.2em;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-box-shadow: 0px 6px 0px #e62222;
+  -moz-box-shadow: 0px 6px 0px #e62222;
+  box-shadow: 0px 6px 0px #b20000;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.resetButton:active {
+  -webkit-box-shadow: 0px 2px 0px #e62222;
+  -moz-box-shadow: 0px 2px 0px #e62222;
+  box-shadow: 0px 2px 0px #e62222;
+  position: relative;
+  top: 4px;
+}
